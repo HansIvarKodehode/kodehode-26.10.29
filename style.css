@@ -164,6 +164,12 @@ button,
   border-radius: var(--radius);
   border: 1px solid var(--border-color);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-small);
+  flex-grow: 1;
+  padding: var(--space-medium);
 }
 .card h2 {
   font-weight: 500;
@@ -171,4 +177,16 @@ button,
 .card img {
   height: 14rem;
   object-fit: cover;
+}
+/* .card-content{
+  padding: var(--space-medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-medium);
+} */
+.price {
+  font-weight: bold;
+  color: var(--accent-color);
+  font-size: var(--text-medium);
 }
